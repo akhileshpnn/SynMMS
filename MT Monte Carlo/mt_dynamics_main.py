@@ -3,10 +3,11 @@ import matplotlib.pyplot as plt
 import os
 from mt_simulation_attributes import *
 from mt_snapshot import *
+import sys
 
 class MtSimulation:
     
-    Nmtmax = 80; # number of MTs max
+    Nmtmax = 20; # number of MTs max
     Rcell = 25; # cell radius minimum (µm)
     Nsteps = 2001; # number of steps
     
@@ -54,7 +55,7 @@ class MtSimulation:
     
     save=True     
     folder_save = os.path.abspath(os.getcwd())+'\\'
-    save_to='saved data'
+    save_to='saved data4'
 
     def __init__(self):
         return
@@ -114,8 +115,17 @@ class MtSimulation:
     def simulate(self):
         
         self.initialize_system()
+               
         
         if self.save==True:
+            
+            isdir = os.path.isdir(self.folder_save+self.save_to+'\\') 
+            if isdir==True:
+                pass
+            elif isdir==False:
+                print('Create a folder with name : '+self.save_to+', in '+self.folder_save)
+                sys.exit()
+            
             np.save(self.folder_save+self.save_to+'\\'+'Mts('+str(self.Nmtmax)+')_position_loop_'+str(0)+'.npy',self.X_position[0]);  
             np.save(self.folder_save+self.save_to+'\\'+'Mts('+str(self.Nmtmax)+')_height_loop_'+str(0)+'.npy',self.LLmt[:,0]);  
         
