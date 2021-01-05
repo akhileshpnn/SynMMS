@@ -1,1 +1,1 @@
-# SynMMs
+# SynMMS
