@@ -25,7 +25,7 @@ class ReactionDiffusion1D:
 #    f=[0.25,0.5,0.5,1]  # 2 stimuli in [f[0]*t_total , f[1]*t_total] and [f[2]*t_total , f[3]*t_total]
           
     input_folder = os.path.abspath(os.getcwd())+'\\'
-    save_to='saved data'
+    save_to='saved data5'
 
     def __init__(self, model, boundary_conditions, pheromone):
 
@@ -109,8 +109,6 @@ class ReactionDiffusion1D:
 
         for t in range(int(self.t_total)):
             
-            
-            
             if self.closed:
                 return
 
@@ -155,10 +153,10 @@ class ReactionDiffusion1D:
                 if isdir==True:
                     pass
                 elif isdir==False:
-                    print('Create a folder with name : '+self.save_to+', in '+self.folder_save)
+                    print('Create a folder with name : '+self.save_to+', in '+self.input_folder)
                     sys.exit()
                 
-                print('saved loop : '+str(t),end='\r')
+                print('saved loop : '+str(t)+'/'+str(self.t_total),end='\r')
                 
                 np.save(self.input_folder+self.save_to+'\\'+'U1_loop_'+str(t)+'.npy',self.Z['U1']);
                 np.save(self.input_folder+self.save_to+'\\'+'V1_loop_'+str(t)+'.npy',self.Z['V1'])
