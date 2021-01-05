@@ -1,3 +1,4 @@
+
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
@@ -7,23 +8,24 @@ from model import *
 from pheromone import *
 import time
 import os
+import sys
 
 
 class ReactionDiffusion1D:
     
     h = .1
     n = 2+1000
-    t_total = 1.0e8
-#    f=[0.25,0.5,0.5,1]  # [beg1, end1, beg2, end2], 2 stimuli
-#    f=[0.7,1] # [beg1, end1], 1 stimulus
-    f=[] # no stimulus
-    
+    t_total = 1.0e8   
     dt = 0.0001
     closed = False
     inc_load = None
-        
+
+    f=[] # no stimulus   
+#    f=[0.7,1] # 1 stimulus between f[0]*t_total and f[1]*t_total  
+#    f=[0.25,0.5,0.5,1]  # 2 stimuli in [f[0]*t_total , f[1]*t_total] and [f[2]*t_total , f[3]*t_total]
+          
     input_folder = os.path.abspath(os.getcwd())+'\\'
-    save_to='saved data4'
+    save_to='saved data'
 
     def __init__(self, model, boundary_conditions, pheromone):
 
@@ -129,7 +131,7 @@ class ReactionDiffusion1D:
 
             self.boundary_conditions.update_boundaries(self.Z)
             
-            if animate==True and t % 1000 == 0:
+            if animate==True and t % 1000 == 0: # animate at every 1000 loop
                 
                 for (row, col) in product(range(nrows), range(ncols)):
                     ind = row*ncols + col
@@ -147,7 +149,15 @@ class ReactionDiffusion1D:
                 fig.canvas.flush_events()
                 time.sleep(.00001)
                 
-            if save==True and t% 200000 == 0:
+            if save==True and t% 200000 == 0: # save at every 200000 loop
+                
+                isdir = os.path.isdir(self.input_folder+self.save_to+'\\') 
+                if isdir==True:
+                    pass
+                elif isdir==False:
+                    print('Create a folder with name : '+self.save_to+', in '+self.folder_save)
+                    sys.exit()
+                
                 print('saved loop : '+str(t),end='\r')
                 
                 np.save(self.input_folder+self.save_to+'\\'+'U1_loop_'+str(t)+'.npy',self.Z['U1']);
