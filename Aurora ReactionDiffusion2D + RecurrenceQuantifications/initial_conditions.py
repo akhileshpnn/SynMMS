@@ -12,7 +12,7 @@ class InitialConditions:
 #        seed_int = np.random.randint(0,500)
         seed_int = 10000
         np.random.seed(seed_int)
-        print(seed_int)
+        print('random number seed:'+str(seed_int))
 
         
         from scipy.integrate import odeint
@@ -34,7 +34,8 @@ class InitialConditions:
         
         seed_int = 10000#np.random.randint(0,500)
         print(seed_int)
-        np.random.seed(seed_int)        
+        np.random.seed(seed_int)   
+        print('random number seed:'+str(seed_int))
         
         Sp = self.model.sand_t*np.random.rand(self.size,self.size)
         Sf = self.model.sand_t - Sp
