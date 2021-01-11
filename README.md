@@ -3,7 +3,10 @@
   <content><![CDATA[
 # ${1:Project Name}
 
-TODO: Write a project description
+This library developed to produce the results for the paper
+
+Konstantin Gavriljuk, Bruno Scocozza, Farid Ghasemalizadeh, Akhilesh P. Nandan, Manuel Campos Medina, Hans Seidel, Malte Schmick, Aneta Koseska, Philippe I. H. Bastiaens.
+"A synthetic morphogenic membrane system that responds with self-organized shape changes to local light cues"
 
 ## Installation
 
