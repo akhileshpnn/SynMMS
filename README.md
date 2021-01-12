@@ -17,7 +17,10 @@ The code has been tested successfully with versions of Python (at least 2.7) on 
 Using the framework
 ===================
 
-The subfolders contains codes that generates theoretical results in the main and supplimentary figures.
+The subfolders contains codes that generates theoretical results in the main and supplimentary figures. 
+
+SynMMs ReactionDiffusion1D : 
+
 
 -----------------------------------------------------------
 
