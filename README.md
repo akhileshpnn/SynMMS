@@ -39,31 +39,7 @@ rd.simulate(save=True, animate=None)
 One can either animate/save or do both simultaneosly. In the case when 'save=True', a subfolder needs to be created to save the files in '.npy' format.
 'plot_kymo.py' can be used to generate the kymographs from saved data.
 
-Different types of experiments can be simulated, such as streams of pulses for example:
+The subfolder 'Aurora ReactionDiffusion2D + RecurrenceQuantifications' has two main files. 'reaction_diffusion2D_main.py' to genrate the 2D pattern.
+'spatial_recurrence_plot_quantifications.py' to caculat Information Entropy value corresponding to an already saved pattern. 
 
-```matlab
-experiments.stream_pulse_experiment(n_pulses, lambda, t_total_min)
-```
-
-or different models can be used:
-
-```matlab
-model = models.model_2comp();
-```
-
-To run a stochastic single-molecule simulation simply define an animation and plot the execution:
-
-```matlab
-absa = abs_animation('ics_hl',1,'g1',4.95); % ics_hl=1 for high Ra initial conditions; also set g1 parameter
-absa.plot_all();
-```
-
-Each run simulates 2s - add more 'n_parts' if you wish to simulate for longer, rather than increasing the duration in the agent_based_simulation class:
-
-```matlab
-absa = abs_animation('ics_hl',1,'g1',4.95,'rep',2,'n_parts',2); % different repetition (rep=2); simulate 4s (2x2s)
-absa.plot_all();
-```
-
-Different repetitions with the same settings can be simulated as shown above. If the repetition exists already, it will be loaded instead.
-Simulations from the paper can only be loaded with versions of Matlab ≥ R2018b.
+Excecuting codes via command prompt (eg. Anaconda cmmand Prompt) is recommended.
