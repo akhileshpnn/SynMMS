@@ -17,12 +17,12 @@ The code has been tested successfully with versions of Python (at least 2.7) on 
 Using the framework
 ===================
 
-The subfolders contains codes that generates theoretical results in the main and supplimentary figures. 
+The subfolders contains codes that generates theoretical results in the main and supplimentary figures.\
 
-SynMMs ReactionDiffusion1D : Codes to generate and plot kymographs in Fig. 1, Fig. 8b and c, Supplimentary Fig. 1h and i, Supplimentary Fig. 9d-f
-MT Monte Carlo             : Codes to generate Supplementary Fig. 1g 
-Aurora ReactionDiffusion2D + RecurrenceQuantifications : Codes to generate Fig. 3i, Supplementary Fig. 4h
-Aurora ReactionDiffusion2D_3variable                   : Codes to generate Fig. 4g
+SynMMs ReactionDiffusion1D : Codes to generate and plot kymographs in Fig. 1, Fig. 8b and c, Supplimentary Fig. 1h and i, Supplimentary Fig. 9d-f\
+MT Monte Carlo             : Codes to generate Supplementary Fig. 1g \
+Aurora ReactionDiffusion2D + RecurrenceQuantifications : Codes to generate Fig. 3i, Supplementary Fig. 4h\
+Aurora ReactionDiffusion2D_3variable                   : Codes to generate Fig. 4g\
 
 -----------------------------------------------------------
 
