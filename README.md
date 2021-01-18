@@ -19,31 +19,25 @@ Using the framework
 
 The subfolders contains codes that generates theoretical results in the main and supplimentary figures. 
 
-SynMMs ReactionDiffusion1D : 
-
+SynMMs ReactionDiffusion1D : Codes to generate and plot kymographs in Fig. 1, Fig. 8b and c, Supplimentary Fig. 1h and i, Supplimentary Fig. 9d-f
+MT Monte Carlo             : Codes to generate Supplementary Fig. 1g 
+Aurora ReactionDiffusion2D + RecurrenceQuantifications : Codes to generate Fig. 3i, Supplementary Fig. 4h
+Aurora ReactionDiffusion2D_3variable                   : Codes to generate Fig. 4g
 
 -----------------------------------------------------------
 
-In general, for running simulations of a customized model, it needs to be defined first, similar to the way the other models are defined (labels, df_model function, etc).
-Same holds for the experiment type (pulsed, sustained, step-wise increasing/decreasing, etc.).
-Then the two objects are combined in a model_simulation object that can run deterministic/stochastic simulations and plot results.
-Sample code:
-
-```matlab
-model = models.simple_dnf_model;  % create model object
-model.par.g1 = 2.957;  % set regime of operation by setting the parameter(s); in this case the criticality regime
-mpe = experiments.multi_pulse_experiment(2);  % create experiment object - multiple pulses at regular intervals
-ms = model_simulation(model, mpe);  % combine the two in a model_simulation object 
-ms.simulate();  % run deterministic simulations
-ms.plot_fraction_active();  % plot the results
+Each folder has a file with filename ending with '_main.py'. It combines different objects defined in other files. For example, in the folder SynMMS/SynMMs ReactionDiffusion1D,
+the 'reaction_diffusion1D_main.py' load the model equations and parameters from 'model.py' file. 
+Sample code :
+```python
+pbc = PeriodicBoundaryConditions()
+model = SynMMS()
+pheromone = TimeVaryingPheromone()
+rd = ReactionDiffusion1D(model, pbc, pheromone)
+rd.simulate(save=True, animate=None)
 ```
-
-One can also animate a stochastic simulation, where the state space is updated, resulting in temporal changes:
-
-```matlab
-ms.stochastic_simulation();
-ms.animate();
-```
+One can either animate/save or do both simultaneosly. In the case when 'save=True', a subfolder needs to be defined to save the files in '.npy' format.
+'plot_kymo.py' can be used to generate the kymographs from saved data.
 
 Different types of experiments can be simulated, such as streams of pulses for example:
 
