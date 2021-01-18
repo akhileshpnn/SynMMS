@@ -36,7 +36,7 @@ pheromone = TimeVaryingPheromone()
 rd = ReactionDiffusion1D(model, pbc, pheromone)
 rd.simulate(save=True, animate=None)
 ```
-One can either animate/save or do both simultaneosly. In the case when 'save=True', a subfolder needs to be defined to save the files in '.npy' format.
+One can either animate/save or do both simultaneosly. In the case when 'save=True', a subfolder needs to be created to save the files in '.npy' format.
 'plot_kymo.py' can be used to generate the kymographs from saved data.
 
 Different types of experiments can be simulated, such as streams of pulses for example:
