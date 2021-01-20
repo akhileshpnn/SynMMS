@@ -108,7 +108,7 @@ if __name__ == '__main__':
     pheromone = Uniform()
     
     rd = ReactionDiffusion2D(model,nbc,pheromone)
-    rd.simulate(animate=None, save_data=True)
+    rd.simulate(animate=True, save_data=None)
 
     
 
