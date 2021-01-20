@@ -40,6 +40,6 @@ One can either animate/save or do both simultaneosly. In the case when 'save=Tru
 'plot_kymo.py' can be used to generate the kymographs from saved data.
 
 The subfolder 'Aurora ReactionDiffusion2D + RecurrenceQuantifications' has two main files. 'reaction_diffusion2D_main.py' to genrate the 2D pattern.
-'spatial_recurrence_plot_quantifications.py' to caculat Information Entropy value corresponding to an already saved pattern. 
+'spatial_recurrence_plot_quantifications.py' to caculate Information Entropy value corresponding to an already saved pattern. 
 
 Excecuting codes via command prompt (eg. Anaconda cmmand Prompt) is recommended.
