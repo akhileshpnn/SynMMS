@@ -24,6 +24,8 @@ MT Monte Carlo             : Codes to generate Supplementary Fig. 1g \
 Aurora ReactionDiffusion2D + RecurrenceQuantifications : Codes to generate Fig. 3i, Supplementary Fig. 4h\
 Aurora ReactionDiffusion2D_3variable                   : Codes to generate Fig. 4g
 
+
+Time for excecution(??) for each simulation
 -----------------------------------------------------------
 
 Each folder has a file with filename ending with '_main.py'. It combines different objects defined in other files. For example, in the folder SynMMS/SynMMs ReactionDiffusion1D,
@@ -43,3 +45,4 @@ The subfolder 'Aurora ReactionDiffusion2D + RecurrenceQuantifications' has two m
 'spatial_recurrence_plot_quantifications.py' to caculate Information Entropy value corresponding to an already saved pattern. 
 
 Excecuting codes via command prompt (eg. Anaconda cmmand Prompt) is recommended.
+
