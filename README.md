@@ -17,7 +17,7 @@ The code has been tested successfully with versions of Python (at least 2.7) on 
 Using the framework
 ===================
 
-The subfolders contains codes that generates theoretical results in the main and supplementary figures.
+The subfolders contains codes to generate the results obtained by numerical simulations in the main and supplementary figures.
 
 SynMMs Reaction Diffusion 1D : Codes to generate kymographs in Fig. 1g, Fig. 8b and c, Supplementary Fig. 1h and i, Supplementary Fig. 9d-f\
 MT Monte Carlo               : Codes to generate Supplementary Fig. 1g \
