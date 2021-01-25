@@ -1,10 +1,10 @@
 # SynMMS
 
-This library is developed to produce the results for the paper 
+This library is developed to produce the results for the paper, 
 
 Nat comm link
 
-previous version on
+previous version,
 
 [Konstantin Gavriljuk, Farid Ghasemalizadeh, Bruno Scocozza, Akhilesh P. Nandan, Hans Seidel, Malte Schmick, Aneta Koseska, Philippe I. H. Bastiaens. "A synthetic morphogenic perceptory cell](https://doi.org/10.1101/481887).
 
