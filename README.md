@@ -26,8 +26,8 @@ Aurora Reaction Diffusion 2D_3 variable                   : Supplementary Fig. 4
 
 -----------------------------------------------------------
 
-Each folder has a file having name ending with '_main.py'. It combines different objects (functions) defined in other files in the same folder. For example, in the folder SynMMS/SynMMs Reaction Diffusion 1D,
-the 'reaction_diffusion1D_main.py' load the model equations and parameters from 'model.py' file. 
+Each folder has a file with name ending '_main.py'. This file combines different objects (functions) defined in linked files in the same folder. For example, in the folder SynMMS/Reaction Diffusion 1D,
+the 'reaction_diffusion1D_main.py' loads the model equations and parameters from 'model.py' file. 
 Sample code :
 ```python
 pbc = PeriodicBoundaryConditions()
@@ -37,7 +37,7 @@ rd = ReactionDiffusion1D(model, pbc, light)
 rd.simulate(save=True, animate=None)
 ```
 One can either animate/save or do both simultaneosly. In the case when 'save=True', a subfolder needs to be created to save the files in '.npy' format.
-'plot_kymograph.py' can be used to generate the kymographs from saved data.
+'plot_kymograph.py' can be used to generate the kymographs from 'saved data' folder.
 
 The subfolder 'Aurora Reaction Diffusion 2D_2 variable + Recurrence Quantifications' has two main files. 'reaction_diffusion2D_main.py' to genrate the 2D pattern.
 'spatial_recurrence_plot_main.py' to caculate Information Entropy value corresponding to an already saved spatial pattern. 
