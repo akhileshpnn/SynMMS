@@ -42,5 +42,5 @@ One can either animate/save or do both simultaneosly. In the case when 'save=Tru
 The subfolder 'Aurora Reaction Diffusion 2D_2 variable + Recurrence Quantifications' has two main files. 'reaction_diffusion2D_main.py' to genrate the 2D pattern.
 'spatial_recurrence_plot_main.py' to caculate Information Entropy value corresponding to an already saved spatial pattern. 
 
-Excecuting codes via command prompt (eg. Anaconda cmmand Prompt) is recommended.
+Excecuting codes via command prompt (eg. Anaconda command prompt) is recommended.
 
