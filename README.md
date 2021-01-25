@@ -19,10 +19,10 @@ Using the framework
 
 The subfolders contains codes to generate the results obtained by numerical simulations in the main and supplementary figures.
 
-SynMMs Reaction Diffusion 1D : Codes to generate kymographs in Fig. 1g, Fig. 8b and c, Supplementary Fig. 1h and i, Supplementary Fig. 9d-f\
-MT Monte Carlo               : Codes to generate Supplementary Fig. 1g \
-Aurora Reaction Diffusion 2D_2 variable + Recurrence Quantifications : Codes to generate Fig. 3i, Supplementary Fig. 4h\
-Aurora Reaction Diffusion 2D_3variable                   : Codes to generate Fig. 4g
+Reaction Diffusion 1D : Kymographs in Fig. 1g, 8b and c, Supplementary Fig. 1h, i, 9d-g\
+MT Monte Carlo               : Supplementary Fig. 1g \
+Aurora Reaction Diffusion 2D_2 variable + Recurrence Quantifications : Fig. 3i, Supplementary Fig. 4h. The spatial recurrence quantification code is used for the quantification shown in Fig. 3f\ 
+Aurora Reaction Diffusion 2D_3 variable                   : Supplementary Fig. 4g
 
 -----------------------------------------------------------
 
