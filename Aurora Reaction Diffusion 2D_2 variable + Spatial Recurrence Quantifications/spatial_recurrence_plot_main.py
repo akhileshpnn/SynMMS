@@ -145,7 +145,7 @@ if __name__=='__main__':
     filename = 'U2'
     eps = 0.3;
     lmin = 3; # minimum size of diagonal hyper-surface
-    shuffle=None
+    shuffle=None # 'shuffle =True' can be used to test whether the Entropy value drops upon pattern shuffling 
     Entropy = []
     
     Entropy_estimation_at=[0, 999000]
