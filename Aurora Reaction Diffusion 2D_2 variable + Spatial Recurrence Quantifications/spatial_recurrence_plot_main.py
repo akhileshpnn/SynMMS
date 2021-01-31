@@ -135,7 +135,7 @@ class SpatialRecurrencePlot:
 if __name__=='__main__':
     
     
-    load_image_from='saved data1'
+    load_image_from='saved data'
     save_to='saved recurrence data'
     parent_folder=os.path.abspath(os.getcwd())+'\\'
     input_folder = parent_folder+load_image_from+'\\'
@@ -143,7 +143,8 @@ if __name__=='__main__':
 
 
     filename = 'U2'
-    eps = 0.3;lmin = 3; 
+    eps = 0.3;
+    lmin = 3; # minimum size of diagonal hyper-surface
     shuffle=None
     Entropy = []
     
