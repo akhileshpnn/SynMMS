@@ -168,4 +168,4 @@ if __name__ == '__main__':
 
     rd = ReactionDiffusion1D(model, pbc, light)
 
-    rd.simulate(save=True, animate=None) # save==True means the state variables will be saved, animate==True means animated simulataneously
+    rd.simulate(save=None, animate=True) # save==True means the state variables will be saved, animate==True means animated simulataneously
