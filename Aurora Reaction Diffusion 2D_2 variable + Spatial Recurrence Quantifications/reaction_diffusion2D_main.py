@@ -15,7 +15,7 @@ class ReactionDiffusion2D:
     dt = .001 # time step
     
     input_folder = os.path.abspath(os.getcwd())+'\\'
-    save_to='saved data3'
+    save_to='saved data'
     
     def __init__(self,model,nbc,light):
         self.model=model
@@ -106,6 +106,6 @@ if __name__ == '__main__':
     light = Uniform() # defining light activation
     
     rd = ReactionDiffusion2D(model,nbc,light)
-    rd.simulate(animate=True, save_data=True) # save==True means the state variables will be saved, animate==True means animated simulataneously
+    rd.simulate(animate=True, save_data=None) # save==True means the state variables will be saved, animate==True means animated simulataneously
 
         
