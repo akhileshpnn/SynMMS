@@ -21,7 +21,7 @@ The subfolders contains codes to generate the results obtained by numerical simu
 
 Reaction Diffusion 1D : Kymographs in Fig. 1g, 8b and c, Supplementary Fig. 1h, i, 9d-g\
 MT Monte Carlo               : Supplementary Fig. 1g \
-Aurora Reaction Diffusion 2D_2 variable + Recurrence Quantifications : Fig. 3i, Supplementary Fig. 4h. The spatial recurrence quantification code is used for the quantification shown in Fig. 3f\ 
+Aurora Reaction Diffusion 2D_2 variable + Recurrence Quantifications : Fig. 3i, Supplementary Fig. 4h. The spatial recurrence quantification code is used for the quantification shown in Fig. 3f
 Aurora Reaction Diffusion 2D_3 variable                   : Supplementary Fig. 4g
 
 -----------------------------------------------------------
