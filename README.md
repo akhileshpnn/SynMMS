@@ -2,7 +2,7 @@
 
 This library is developed to produce the results for the paper, 
 
-Nat comm link
+Accepted in Nature Communication : Link will be added soon
 
 previous version,
 
