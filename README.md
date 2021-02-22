@@ -9,7 +9,7 @@ previous version,
 [Konstantin Gavriljuk, Farid Ghasemalizadeh, Bruno Scocozza, Akhilesh P. Nandan, Hans Seidel, Malte Schmick, Aneta Koseska, Philippe I. H. Bastiaens. "A synthetic morphogenic perceptory cell](https://doi.org/10.1101/481887).
 
 -------------------------
-Requirements
+Python Code
 -------------------------
 
 The code has been tested successfully with versions of Python (at least 2.7) on Windows and macOS.
@@ -44,3 +44,11 @@ The subfolder 'Aurora Reaction Diffusion 2D_2 variable + Recurrence Quantificati
 
 Excecuting codes via command prompt (eg. Anaconda command prompt) is recommended.
 
+
+-------------------------
+Matlab Code
+-------------------------
+
+The folder "CellularAutomata_RDSim" contains Matlab R2018a scripts and c++ code for compilation in Matlab to simulate the reaction diffusion system of the tubulin-stathmin association/dissociation cycle and the stathmin phosphorylation cycle in 1D and 2D (Fig 4f, Supplementary Fig. 6i-k and 8i). This code has been successfully tested with Matlab R2018a - R2020a under Mac OS X and Windows 10. It requires a c++ compiler (xCode for Mac OS X, Visual Studio 2019 for Windows) to be configured to compile and execute c++ code from within Matlab.
+
+Please refer to the respective Matlab scripts on how to use the simulations to generate figure panels.
