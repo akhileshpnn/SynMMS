@@ -18,4 +18,4 @@ Per simulation iteration, all interactions of all species in each voxel as defin
 # Diffusion
 For a given diffusant radius (e.g. of 3 voxels, can be different for each species), all voxels with the same identifier within that radius are diffusively linked (helper_initNeighb_StatTub.h) and per simulation iteration the concentration per voxel of this neighborhood is averaged (helper_diffuse.h).
 
-Please refer to the Methods of the paper and the (poorly commented) code and scripts for more information.
+Please refer to the Methods of the paper and the (poorly commented) code and scripts for more information. There is no separate matlab script file for the panels in Fig.4f, because the data plotted there is a condensed form of the data generated for Supplementary Fig. 6i-k.
