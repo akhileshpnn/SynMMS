@@ -2,7 +2,8 @@
 
 This library is developed to produce the results for the paper, 
 
-Accepted in Nature Communication : Link will be added soon
+A self-organized synthetic morphogenic liposome responds with shape changes to local light cues. 
+Konstantin Gavriljuk, Bruno Scocozza, Farid Ghasemalizadeh, Hans Seidel, Akhilesh P. Nandan, Manuel Campos Medina, Malte Schmick, Aneta Koseska, Philippe I. H. Bastiaens.(https://doi.org/10.1038/s41467-021-21679-2)
 
 previous version,
 
