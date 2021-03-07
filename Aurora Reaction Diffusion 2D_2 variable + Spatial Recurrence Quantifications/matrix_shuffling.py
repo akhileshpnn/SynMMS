@@ -25,8 +25,8 @@ def shuffling(image, output_folder, filename, out='Full'):
     mean_image = np.mean(image)
     
     # Defining binary image to identify spots in pattern. Threshold depends on images. Needs to be calculated separately for each image
+    # change in line 93 as well
     binary_image = image > thresh + 0.5*mean_image #@300000
-#    binary_image = image > mean_image + 0.1*mean_image #@20000
 #    binary_image = image > mean_image #@0
     
     labeled_image = skimage.morphology.label(binary_image, connectivity = 2, background=thresh)
@@ -91,7 +91,6 @@ def shuffling(image, output_folder, filename, out='Full'):
                 rest_ind_shuff = np.delete(rest_ind_shuff,n, axis=0)
 
     binary_shuffled = shuffled > thresh + 0.5*mean_image  
-#    binary_shuffled = shuffled > thresh + 0.1*mean_image    
 #    binary_shuffled = shuffled > mean_image 
     
     print(np.sum(image));print(np.sum(shuffled))
