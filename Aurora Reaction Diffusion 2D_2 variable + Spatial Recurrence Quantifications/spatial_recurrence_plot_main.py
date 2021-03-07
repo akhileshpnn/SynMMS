@@ -28,7 +28,7 @@ class SpatialRecurrencePlot:
         self.image = np.load( os.path.join(self.input_folder, self.filename_with_extension))
         Nx,Ny=np.shape(self.image)
         
-        span = 50 # Crop the original image to (span x span)
+        span = 50 # Crop the original image to (2*span x 2*span)
         if Nx<2*span:
             print('Cannot crop image with dimension ('+str(Nx)+','+str(Ny)+') to ('+str(2*span)+','+str(2*span)+')') 
             sys.exit()
