@@ -24,6 +24,7 @@ def shuffling(image, output_folder, filename, out='Full'):
     thresh = threshold_otsu(image) 
     mean_image = np.mean(image)
     
+    # Defining binary image to identify spots in pattern. Threshold depends on images. Needs to be calculated separately for each image
     binary_image = image > thresh + 0.5*mean_image #@300000
 #    binary_image = image > mean_image + 0.1*mean_image #@20000
 #    binary_image = image > mean_image #@0
