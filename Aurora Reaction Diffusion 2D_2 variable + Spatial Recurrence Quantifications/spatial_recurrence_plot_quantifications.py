@@ -89,13 +89,13 @@ def spatial_recurrence_matrix(image, output_folder, file_name, eps, detrend = No
     
     if not detrend==None:
         image = detrending_3D(image, output_folder, file_name, eps)
-        image = img*nan_image_
+        image = image*nan_image_
         plt.figure()
         plt.imshow(image)
         plt.savefig(os.path.join(output_folder, file_name+'_detrended_eps='+str(eps)+'_.png'), dpi=300)
 
 
-    #img = normalize_image(img)
+    image = normalize_image(image)
     nx, ny = np.shape(image)
     R = np.zeros((nx, ny, nx, ny))
     for i in range(nx):
