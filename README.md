@@ -2,13 +2,8 @@
 
 This library is developed to produce the results for the paper, 
 
-A self-organized synthetic morphogenic liposome responds with shape changes to local light cues. 
-Konstantin Gavriljuk, Bruno Scocozza, Farid Ghasemalizadeh, Hans Seidel, Akhilesh P. Nandan, Manuel Campos Medina, Malte Schmick, Aneta Koseska, Philippe I. H. Bastiaens.
-
-previous version,
-
-[Konstantin Gavriljuk, Farid Ghasemalizadeh, Bruno Scocozza, Akhilesh P. Nandan, Hans Seidel, Malte Schmick, Aneta Koseska, Philippe I. H. Bastiaens. "A synthetic morphogenic perceptory cell](https://doi.org/10.1101/481887).
-
+[A self-organized synthetic morphogenic liposome responds with shape changes to local light cues 
+Konstantin Gavriljuk, Bruno Scocozza, Farid Ghasemalizadeh, Hans Seidel, Akhilesh P. Nandan, Manuel Campos Medina, Malte Schmick, Aneta Koseska, Philippe I. H. Bastiaens.](https://www.nature.com/articles/s41467-021-21679-2)
 
 Python Code
 ===================
